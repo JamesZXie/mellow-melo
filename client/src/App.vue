@@ -1,8 +1,10 @@
 <template>
   <div id="app">
     <Header />
-    <Menu />
-    <Order />
+    <div class="menu-order-container">
+      <Menu />
+      <Order />
+    </div>
   </div>
 </template>
 
@@ -28,7 +30,19 @@ export default {
 
 <style lang="scss">
 
-*{
+#app {
+  flex-direction: column;
+  height: 100vh;
+}
+
+.menu-order-container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+}
+
+* {
   padding: 0px;
   margin: 0px;
 }

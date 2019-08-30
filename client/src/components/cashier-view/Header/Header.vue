@@ -16,6 +16,7 @@
 <style scoped>
 
 .container {
+    height: 30px;
     background-color: red;
 }
 
